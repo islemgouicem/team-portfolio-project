@@ -36,11 +36,11 @@ const teamMembers = [
         profileLink: "./team/firstname-lasname.html"
     },
     {
-        name: "Carol",
-        image: "./assets/member1.jpg",
-        bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-        skills: ["Planning", "Communication", "Leadership"],
-        profileLink: "./team/firstname-lasname.html"
+        name: "Fatima Zohra Doua BOURZAK",
+        image: "./assets/douaa.png",
+        bio: "A dedicated AI engineering student and full-stack developer with a passion for creativity and solving complex problems.",
+        skills: ["3D Design", "Planning", "Full-Stack Dev"],
+        profileLink: "./team/fatima-zohra-doua-bourzak.html"
     },
     {
         name: "Dave",
