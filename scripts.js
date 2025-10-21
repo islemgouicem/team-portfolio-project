@@ -19,7 +19,7 @@ const teamMembers = [
         image: "./assets/islem-gouicem.jpg",
         bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
         skills: ["Full Stack", "UI/UX Design", "Data science"],
-        profileLink: "./team/firstname-lasname.html"
+        profileLink: "./team/islem-gouicem.html"
     },
     {
         name: "Alice",
@@ -101,5 +101,7 @@ teamMembers.forEach((member, index) => {
     </div>
     `;
 
-    container.appendChild(card);
+    if (container) {
+        container.appendChild(card);
+    }
 });
