@@ -19,42 +19,42 @@ const teamMembers = [
         image: "./assets/islem-gouicem.jpg",
         bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
         skills: ["Full Stack", "UI/UX Design", "Data science"],
-        profileLink: "./team/islem.html"
+        profileLink: "./team/firstname-lasname.html"
     },
     {
         name: "Alice",
         image: "./assets/member1.jpg",
         bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
         skills: ["Design", "Prototyping", "User Research"],
-        profileLink: "#"
+        profileLink: "./team/firstname-lasname.html"
     },
     {
         name: "Bob",
         image: "./assets/member1.jpg",
         bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
         skills: ["Node.js", "Databases", "APIs"],
-        profileLink: "#"
+        profileLink: "./team/firstname-lasname.html"
     },
     {
         name: "Carol",
         image: "./assets/member1.jpg",
         bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
         skills: ["Planning", "Communication", "Leadership"],
-        profileLink: "#"
+        profileLink: "./team/firstname-lasname.html"
     },
     {
         name: "Dave",
         image: "./assets/member1.jpg",
         bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
         skills: ["Python", "ML Models", "Data Analysis"],
-        profileLink: "#"
+        profileLink: "./team/firstname-lasname.html"
     },
     {
         name: "Eve",
         image: "./assets/member1.jpg",
         bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
         skills: ["SEO", "Content Strategy", "Social Media"],
-        profileLink: "#"
+        profileLink: "./team/firstname-lasname.html"
     },
 ];
 const container = document.getElementById("team-container");
@@ -66,43 +66,40 @@ teamMembers.forEach((member, index) => {
 
     card.innerHTML = `
     <div class="relative w-full h-[500px] transition-transform duration-700 preserve-3d cursor-pointer" onclick="this.classList.toggle('rotate-y-180')">
-      
-      <!-- Front of Card -->
-      <div class="absolute inset-0 backface-hidden rounded-2xl overflow-hidden glass-card border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 glow">
-        <div class="relative h-full">
-          <img src="${member.image}" alt="${member.name}" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 right-0 p-6">
-            <h3 class="text-2xl font-bold text-white mb-2 font-space">${member.name}</h3>
-            <p class="text-muted-foreground text-sm mt-2">Click to learn more</p>
-          </div>
-          <div class="absolute top-4 right-4 w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center neon-glow animate-glow-pulse">
-            <span class="text-primary text-xl">→</span>
-          </div>
+    
+        <!-- Front of Card -->
+        <div class="absolute inset-0 backface-hidden rounded-2xl overflow-hidden glass-card border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 glow">
+            <div class="relative h-full">
+                <img src="${member.image}" alt="${member.name}" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                <h3 class="text-2xl font-bold text-white mb-2 font-space">${member.name}</h3>
+                <p class="text-muted-foreground text-md mt-2">Click to learn more</p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Back of Card -->
-      <div class="absolute inset-0 backface-hidden rounded-2xl glass-card border-2 border-accent/40 p-6 flex flex-col justify-between rotate-y-180">
+        <!-- Back of Card -->
+        <div class="absolute inset-0 backface-hidden rounded-2xl glass-card border-2 border-accent/40 p-6 flex flex-col justify-between rotate-y-180">
         <div>
-          <h3 class="text-2xl font-bold mb-2 text-gradient font-space">${member.name}</h3>
-          <p class="text-white/80 mb-6 leading-relaxed">${member.bio}</p>
-          <div class="space-y-2">
+            <h3 class="text-2xl font-bold mb-2 text-gradient font-space">${member.name}</h3>
+            <p class="text-white/80 mb-6 leading-relaxed">${member.bio}</p>
+            <div class="space-y-2">
             <p class="text-sm text-muted-foreground font-semibold">Skills & Expertise:</p>
             <div class="flex flex-wrap gap-2">
-              ${member.skills.map(skill => `
+                ${member.skills.map(skill => `
                 <span class="px-3 py-1 bg-primary/10 border border-primary/30 rounded-full text-xs text-primary font-medium">${skill}</span>
-              `).join("")}
+                `).join("")}
             </div>
-          </div>
+            </div>
         </div>
         <div class="flex flex-col gap-2 mt-4">
-          <a href="${member.profileLink}" class="w-full py-3 bg-gradient-to-r from-primary to-accent rounded-full text-white font-semibold hover:scale-105 transition-transform duration-300 neon-glow text-center">View Full Profile</a>
+            <a href="${member.profileLink}" class="w-full py-3 bg-gradient-to-r from-primary to-accent rounded-full text-white font-semibold hover:scale-105 transition-transform duration-300 neon-glow text-center">View Full Profile</a>
         </div>
-      </div>
+        </div>
 
     </div>
-  `;
+    `;
 
     container.appendChild(card);
 });
