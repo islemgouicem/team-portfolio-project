@@ -35,32 +35,33 @@ const teamMembers = [
     profileLink: "./team/maroua-sayah.html",
   },
   {
-    name: "Bob",
-    image: "./assets/member1.jpg",
-    bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-    skills: ["Node.js", "Databases", "APIs"],
-    profileLink: "./team/firstname-lasname.html",
+      name: "Bob",
+      image: "./assets/member1.jpg",
+      bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
+      skills: ["Node.js", "Databases", "APIs"],
+      profileLink: "./team/firstname-lasname.html"
   },
   {
-    name: "Carol",
-    image: "./assets/member1.jpg",
-    bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-    skills: ["Planning", "Communication", "Leadership"],
-    profileLink: "./team/firstname-lasname.html",
+      name: "Carol",
+      image: "./assets/member1.jpg",
+      bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
+      skills: ["Planning", "Communication", "Leadership"],
+      profileLink: "./team/firstname-lasname.html"
   },
   {
-    name: "Dave",
-    image: "./assets/member1.jpg",
-    bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-    skills: ["Python", "ML Models", "Data Analysis"],
-    profileLink: "./team/firstname-lasname.html",
+      name: "REMMACHE Hibaterrahman",
+      role: "Team Member",
+      image: "./assets/Hiba.jpg",
+      bio: "A passionate student in computer science at ENSIA, with a keen interest in design and problem-solving.",
+      skills: ["Design", "Problem-Solving", "Front-End Dev"],
+      profileLink: "./team/hiba.html"
   },
   {
-    name: "Eve",
-    image: "./assets/member1.jpg",
-    bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-    skills: ["SEO", "Content Strategy", "Social Media"],
-    profileLink: "./team/firstname-lasname.html",
+      name: "Eve",
+      image: "./assets/member1.jpg",
+      bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
+      skills: ["SEO", "Content Strategy", "Social Media"],
+      profileLink: "./team/firstname-lasname.html"
   },
 ];
 const container = document.getElementById("team-container");
