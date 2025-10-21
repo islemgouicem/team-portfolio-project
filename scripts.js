@@ -43,11 +43,12 @@ const teamMembers = [
         profileLink: "./team/firstname-lasname.html"
     },
     {
-        name: "Dave",
-        image: "./assets/member1.jpg",
-        bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-        skills: ["Python", "ML Models", "Data Analysis"],
-        profileLink: "./team/firstname-lasname.html"
+        name: "REMMACHE Hibaterrahman",
+        role: "Team Member",
+        image: "./assets/Hiba.jpg",
+        bio: "A passionate student in computer science at ENSIA, with a keen interest in design and problem-solving.",
+        skills: ["Design", "Problem-Solving", "Front-End Dev"],
+        profileLink: "./team/hiba.html"
     },
     {
         name: "Eve",
