@@ -14,6 +14,7 @@ tailwind.config = {
 };
 
 const teamMembers = [
+
   {
     name: "Islem GOUICEM",
     image: "./assets/islem-gouicem.jpg",
@@ -58,11 +59,12 @@ const teamMembers = [
       profileLink: "./team/hiba.html"
   },
   {
-      name: "Eve",
-      image: "./assets/member1.jpg",
-      bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-      skills: ["SEO", "Content Strategy", "Social Media"],
-      profileLink: "./team/firstname-lasname.html"
+     name: "Fatima Zohra Doua BOURZAK",
+        role: "Team Member",
+        image: "./assets/douaa.png",
+        bio: "A dedicated AI engineering student and full-stack developer with a passion for creativity and solving complex problems.",
+        skills: ["3D Design", "Planning", "Full-Stack Dev"],
+        profileLink: "./team/fatima-zohra-doua-bourzak.html"
   },
 ];
 const container = document.getElementById("team-container");
