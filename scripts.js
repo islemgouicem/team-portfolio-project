@@ -35,11 +35,12 @@ const teamMembers = [
     profileLink: "./team/maroua-sayah.html",
   },
   {
-      name: "Bob",
-      image: "./assets/member1.jpg",
-      bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-      skills: ["Node.js", "Databases", "APIs"],
-      profileLink: "./team/firstname-lasname.html"
+        name: "Hamza Faiz Ahmed Fouatih",
+        role: "Backend Developer",
+        image: "./assets/hamza.png",
+        bio: "AI engineering student at the National School of Artificial Intelligence. He has powerful creativity, strong soft skills, and a solid programming background with technical hard skills.",
+        skills: ["python", "c++", "dart"],
+        profileLink: "./team/hamza.html"
   },
   {
       name: "Carol",
