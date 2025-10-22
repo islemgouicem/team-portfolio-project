@@ -36,12 +36,12 @@ const teamMembers = [
     profileLink: "./team/maroua-sayah.html",
   },
   {
-        name: "Fatima Zohra Doua BOURZAK",
-        role: "Team Member",
-        image: "./assets/douaa.png",
-        bio: "A dedicated AI engineering student and full-stack developer with a passion for creativity and solving complex problems.",
-        skills: ["3D Design", "Planning", "Full-Stack Dev"],
-        profileLink: "./team/fatima-zohra-doua-bourzak.html"
+        name: "Hamza Faiz Ahmed Fouatih",
+        role: "Backend Developer",
+        image: "./assets/hamza.png",
+        bio: "AI engineering student at the National School of Artificial Intelligence. He has powerful creativity, strong soft skills, and a solid programming background with technical hard skills.",
+        skills: ["python", "c++", "dart"],
+        profileLink: "./team/hamza.html"
   },
   {
       name: "Carol",
@@ -59,11 +59,12 @@ const teamMembers = [
       profileLink: "./team/hiba.html"
   },
   {
-      name: "Eve",
-      image: "./assets/member1.jpg",
-      bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-      skills: ["SEO", "Content Strategy", "Social Media"],
-      profileLink: "./team/firstname-lasname.html"
+     name: "Fatima Zohra Doua BOURZAK",
+        role: "Team Member",
+        image: "./assets/douaa.png",
+        bio: "A dedicated AI engineering student and full-stack developer with a passion for creativity and solving complex problems.",
+        skills: ["3D Design", "Planning", "Full-Stack Dev"],
+        profileLink: "./team/fatima-zohra-doua-bourzak.html"
   },
 ];
 const container = document.getElementById("team-container");
