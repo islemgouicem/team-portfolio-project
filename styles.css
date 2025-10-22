@@ -6,6 +6,10 @@
     --shadow-neon: 0 0 20px hsl(280 80% 60% / 0.6);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Space Grotesk", sans-serif;
 }

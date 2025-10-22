@@ -1,342 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../styles.css" />
-    <title>Team Member Detail</title>
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles.css" />
+  <title>Team Member Detail</title>
 
-    <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-      /* Custom design system */
-      :root {
-        --background: hsl(240, 10%, 3.9%);
-        --foreground: hsl(0, 0%, 98%);
-        --primary: hsl(263, 70%, 50%);
-        --accent: hsl(280, 80%, 60%);
-        --muted-foreground: hsl(240, 5%, 64.9%);
-        --shadow-neon: 0 0 20px hsl(280 80% 60% / 0.6);
-      }
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
 
-      body {
-        background-color: var(--background);
-        color: var(--foreground);
-        font-family: "Space Grotesk", sans-serif;
-      }
+  <style>
+    /* Custom design system */
+    :root {
+      --background: hsl(240, 10%, 3.9%);
+      --foreground: hsl(0, 0%, 98%);
+      --primary: hsl(263, 70%, 50%);
+      --accent: hsl(280, 80%, 60%);
+      --muted-foreground: hsl(240, 5%, 64.9%);
+      --shadow-neon: 0 0 20px hsl(280 80% 60% / 0.6);
+    }
 
-      .glass-card {
-        backdrop-filter: blur(12px);
-        background-color: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      font-family: "Space Grotesk", sans-serif;
+    }
 
-      .text-gradient {
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        background-image: linear-gradient(90deg, var(--accent), var(--primary));
-      }
+    .glass-card {
+      backdrop-filter: blur(12px);
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
-      .neon-glow {
-        box-shadow: var(--shadow-neon);
-      }
+    .text-gradient {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(90deg, var(--accent), var(--primary));
+    }
 
-      .glow {
-        box-shadow: 0 0 40px var(--primary);
-      }
-      .member-photo {
-        width: 72%;
-        height: auto;
-        margin: 0 auto;
-        border-radius: 1.5rem;
-      }
-    </style>
-  </head>
+    .neon-glow {
+      box-shadow: var(--shadow-neon);
+    }
 
-  <body class="min-h-screen relative">
-    <!-- Background decorative elements -->
-    <div
-      class="fixed top-20 right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"
-    ></div>
-    <div
-      class="fixed bottom-20 left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl"
-    ></div>
+    .glow {
+      box-shadow: 0 0 40px var(--primary);
+    }
 
-    <!-- Header with back button -->
-    <header class="relative z-10 p-6 md:p-8">
-      <a
-        href="../index.html"
-        class="inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full hover:border-primary/40 transition-all duration-300"
-      >
-        <img
-          src="../assets/back_arrow.svg"
-          alt="back arrow"
-          width="20"
-          style="color: white"
-        />Back to Team
-      </a>
-    </header>
+    .member-photo {
+      width: 72%;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 1.5rem;
+    }
+  </style>
+</head>
 
-    <!-- Hero Section -->
-    <section class="relative px-6 md:px-8 pb-20">
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <!-- Image -->
-        <div class="relative">
-          <div
-            class="aspect-square rounded-3xl overflow-hidden glass-card border-2 border-primary/20 glow"
-          >
-            <img
-              src="../assets/maroua.jpg"
-              alt="Member Name"
-              class="w-full h-full object-cover member-photo"
-            />
-          </div>
-          <div
-            class="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-50"
-          ></div>
+<body class="min-h-screen relative">
+  <!-- Background decorative elements -->
+  <div class="fixed top-20 right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+  <div class="fixed bottom-20 left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
+
+  <!-- Header with back button -->
+  <header class="relative z-10 p-6 md:p-8">
+    <a href="../index.html"
+      class="inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full hover:border-primary/40 transition-all duration-300">
+      <img src="../assets/back_arrow.svg" alt="back arrow" width="20" style="color: white" />Back to Team
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative px-6 md:px-8 pb-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <!-- Image -->
+      <div class="relative">
+        <div class="aspect-square rounded-3xl overflow-hidden glass-card border-2 border-primary/20 glow">
+          <img src="../assets/maroua.jpg" alt="Member Name" class="w-full h-full object-cover member-photo" />
         </div>
-
-        <!-- Info -->
-        <div class="space-y-6">
-          <div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-4">Sayah Maroua</h1>
-            <p class="text-2xl md:text-3xl text-gradient font-semibold mb-6">
-              Team Member
-            </p>
-            <p class="text-lg text-muted-foreground leading-relaxed">
-              AI and Data Science student with a strong interest in machine
-              learning, software development, and UI/UX design. Experienced in
-              project planning, problem solving, and teamwork, with a commitment
-              to delivering innovative and user focused solutions. Merges
-              analytical insight with creative design to bridge the gap between
-              technology and user experience, developing systems that are both
-              efficient and intuitive.
-            </p>
-          </div>
-
-          <!-- Quick Stats -->
-          <div class="grid grid-cols-2 gap-4">
-            <div class="glass-card p-4 rounded-xl border border-primary/20">
-              <p class="text-sm text-muted-foreground mb-1">Location</p>
-              <p class="font-semibold">Bouira, Algeria</p>
-            </div>
-            <div class="glass-card p-4 rounded-xl border border-accent/20">
-              <p class="text-sm text-muted-foreground mb-1">Experience</p>
-              <p class="font-semibold">2+ years</p>
-            </div>
-          </div>
-
-          <!-- Contact -->
-          <a
-            href="https://github.com/Maroua0618"
-            class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-full text-foreground font-bold neon-glow"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/maroua-sayah-997709284/"
-            class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-full text-foreground font-bold neon-glow"
-          >
-            LinkedIn
-          </a>
+        <div
+          class="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-50">
         </div>
       </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section class="relative px-6 md:px-8 py-20">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold mb-12">
-          Expertise & <span class="text-gradient">Skills</span>
-        </h2>
-        <div class="flex flex-wrap gap-4">
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            Web Development
-          </div>
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            Front-End Development
-          </div>
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            AI Fundamentals
-          </div>
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            Machine Learning
-          </div>
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            UI/UX Design
-          </div>
+      <!-- Info -->
+      <div class="space-y-6">
+        <div>
+          <h1 class="text-5xl md:text-7xl font-bold mb-4">Sayah Maroua</h1>
+          <p class="text-2xl md:text-3xl text-gradient font-semibold mb-6">
+            Team Member
+          </p>
+          <p class="text-lg text-muted-foreground leading-relaxed">
+            AI and Data Science student with a strong interest in machine
+            learning, software development, and UI/UX design. Experienced in
+            project planning, problem solving, and teamwork, with a commitment
+            to delivering innovative and user focused solutions. Merges
+            analytical insight with creative design to bridge the gap between
+            technology and user experience, developing systems that are both
+            efficient and intuitive.
+          </p>
+        </div>
 
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            Problem Solving
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass-card p-4 rounded-xl border border-primary/20">
+            <p class="text-sm text-muted-foreground mb-1">Location</p>
+            <p class="font-semibold">Bouira, Algeria</p>
           </div>
-
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            Leadership
+          <div class="glass-card p-4 rounded-xl border border-accent/20">
+            <p class="text-sm text-muted-foreground mb-1">Experience</p>
+            <p class="font-semibold">2+ years</p>
           </div>
         </div>
+
+        <!-- Contact -->
+        <a href="https://github.com/Maroua0618"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-full text-foreground font-bold neon-glow">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/maroua-sayah-997709284/"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-full text-foreground font-bold neon-glow">
+          LinkedIn
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="relative px-6 md:px-8 py-20">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold mb-12">
-          Languages <span class="text-gradient"> </span>
-        </h2>
-        <div class="flex flex-wrap gap-4">
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            Python
-          </div>
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            JavaScript
-          </div>
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            C++
-          </div>
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            C
-          </div>
+  <!-- Skills Section -->
+  <section class="relative px-6 md:px-8 py-20">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-12">
+        Expertise & <span class="text-gradient">Skills</span>
+      </h2>
+      <div class="flex flex-wrap gap-4">
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          Web Development
+        </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          Front-End Development
+        </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          AI Fundamentals
+        </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          Machine Learning
+        </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          UI/UX Design
+        </div>
 
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            DART
-          </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          Problem Solving
+        </div>
 
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            PHP
-          </div>
-
-          <div
-            class="glass-card px-6 py-3 rounded-full border border-primary/20"
-          >
-            MySQL
-          </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          Leadership
         </div>
       </div>
-    </section>
-    <!-- Achievements Section -->
-    <section class="relative px-6 md:px-8 py-20">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold mb-12">
-          Key <span class="text-gradient">Achievements</span>
-        </h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="glass-card p-6 rounded-2xl border border-primary/20">
-            Designed “Orbit HR,” a modern HR management platform that simplifies
-            attendance tracking, task management, and leave requests. Focused on
-            creating a clean, intuitive design for three roles — admin, HR, and
-            employee — improving usability and workflow efficiency.
-          </div>
-          <div class="glass-card p-6 rounded-2xl border border-primary/20">
-            Designed "Biblio" an online book library platform, featuring a
-            seamless book ordering process and an integrated AI assistant to
-            enhance user engagement and simplify discovery.
-          </div>
-          <div class="glass-card p-6 rounded-2xl border border-primary/20">
-            Collaborated with a development team to build a full featured event
-            planning website that connects users with local service providers,
-            helping organize weddings, corporate events, and celebrations with
-            ease.
-          </div>
-          <div class="glass-card p-6 rounded-2xl border border-primary/20">
-            Designed and implemented with my team a crop prediction and
-            classification website using AI algorithms to help farmers forecast
-            yields and make data-driven agricultural decisions.
-          </div>
-          <div class="glass-card p-6 rounded-2xl border border-primary/20">
-            Contributed to the development of an AI-powered learning platform
-            that delivers adaptive and personalized learning experiences
-            tailored to user preferences and goals.
-          </div>
-          <div class="glass-card p-6 rounded-2xl border border-primary/20">
-            Developed and optimized multiple machine learning models for
-            prediction, classification, and recommendation tasks, focusing on
-            accuracy, scalability, and real-world applications.
-          </div>
+    </div>
+  </section>
+
+  <section class="relative px-6 md:px-8 py-20">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-12">
+        Languages <span class="text-gradient"> </span>
+      </h2>
+      <div class="flex flex-wrap gap-4">
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          Python
+        </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          JavaScript
+        </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          C++
+        </div>
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          C
+        </div>
+
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          DART
+        </div>
+
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          PHP
+        </div>
+
+        <div class="glass-card px-6 py-3 rounded-full border border-primary/20">
+          MySQL
         </div>
       </div>
-    </section>
-
-    <!-- Philosophy Section -->
-    <section class="relative px-6 md:px-8 py-20">
-      <div
-        class="max-w-4xl mx-auto glass-card p-12 rounded-3xl border-2 border-accent/20 glow"
-      >
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">
-          Member <span class="text-gradient">Philosophy</span>
-        </h2>
-        <blockquote
-          class="text-xl md:text-2xl text-foreground/90 leading-relaxed italic"
-        >
-          "Blending creativity with analytical thinking to build intelligent,
-          user focused solutions."
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="relative px-6 md:px-8 py-20">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">
-          Let's Work <span class="text-gradient">Together</span>
-        </h2>
-        <p class="text-xl text-muted-foreground mb-10">
-          Interested in collaborating? Reach out and let's create something
-          amazing.
-        </p>
-        <div class="flex flex-wrap gap-4 justify-center">
-          <a
-            href="mailto:maroua.sayah@ensia.edu.dz"
-            class="px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-full text-foreground font-bold neon-glow"
-          >
-            Send Message
-          </a>
-          <a
-            href="../index.html#team"
-            class="px-8 py-4 glass-card rounded-full text-foreground font-bold hover:border-accent/50"
-          >
-            View Full Team
-          </a>
+    </div>
+  </section>
+  <!-- Achievements Section -->
+  <section class="relative px-6 md:px-8 py-20">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-12">
+        Key <span class="text-gradient">Achievements</span>
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="glass-card p-6 rounded-2xl border border-primary/20">
+          Designed “Orbit HR,” a modern HR management platform that simplifies
+          attendance tracking, task management, and leave requests. Focused on
+          creating a clean, intuitive design for three roles — admin, HR, and
+          employee — improving usability and workflow efficiency.
+        </div>
+        <div class="glass-card p-6 rounded-2xl border border-primary/20">
+          Designed "Biblio" an online book library platform, featuring a
+          seamless book ordering process and an integrated AI assistant to
+          enhance user engagement and simplify discovery.
+        </div>
+        <div class="glass-card p-6 rounded-2xl border border-primary/20">
+          Collaborated with a development team to build a full featured event
+          planning website that connects users with local service providers,
+          helping organize weddings, corporate events, and celebrations with
+          ease.
+        </div>
+        <div class="glass-card p-6 rounded-2xl border border-primary/20">
+          Designed and implemented with my team a crop prediction and
+          classification website using AI algorithms to help farmers forecast
+          yields and make data-driven agricultural decisions.
+        </div>
+        <div class="glass-card p-6 rounded-2xl border border-primary/20">
+          Contributed to the development of an AI-powered learning platform
+          that delivers adaptive and personalized learning experiences
+          tailored to user preferences and goals.
+        </div>
+        <div class="glass-card p-6 rounded-2xl border border-primary/20">
+          Developed and optimized multiple machine learning models for
+          prediction, classification, and recommendation tasks, focusing on
+          accuracy, scalability, and real-world applications.
         </div>
       </div>
-    </section>
-    <script src="../scripts.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="relative px-6 md:px-8 py-20">
+    <div class="max-w-4xl mx-auto glass-card p-12 rounded-3xl border-2 border-accent/20 glow">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Member <span class="text-gradient">Philosophy</span>
+      </h2>
+      <blockquote class="text-xl md:text-2xl text-foreground/90 leading-relaxed italic">
+        "Blending creativity with analytical thinking to build intelligent,
+        user focused solutions."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="relative px-6 md:px-8 py-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Let's Work <span class="text-gradient">Together</span>
+      </h2>
+      <p class="text-xl text-muted-foreground mb-10">
+        Interested in collaborating? Reach out and let's create something
+        amazing.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="mailto:maroua.sayah@ensia.edu.dz"
+          class="px-8 py-4 bg-gradient-to-r from-primary to-accent rounded-full text-foreground font-bold neon-glow">
+          Send Message
+        </a>
+        <a href="../index.html#team"
+          class="px-8 py-4 glass-card rounded-full text-foreground font-bold hover:border-accent/50">
+          View Full Team
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="my-2 text-center text-muted-foreground">
+    <p class="text-md">©2025 G7-Team1. Crafted with passion.</p>
+  </footer>
+  <script src="../scripts.js"></script>
+</body>
+
 </html>

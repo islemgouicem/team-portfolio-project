@@ -18,8 +18,8 @@ const teamMembers = [
   {
     name: "Islem GOUICEM",
     image: "./assets/islem-gouicem.jpg",
-    bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-    skills: ["Full Stack", "UI/UX Design", "Data science"],
+    bio: "AI student and full stack developer passionate about creating impactful digital products. Focused on innovation, leadership, and building scalable, sustainable tech solutions.",
+    skills: ["Web Development", "Mobile Development", "UI/UX Design", "Machine Learning", "Leadership", "Entrepreneurship"],
     profileLink: "./team/islem-gouicem.html",
   },
   {
@@ -36,35 +36,35 @@ const teamMembers = [
     profileLink: "./team/maroua-sayah.html",
   },
   {
-        name: "Hamza Faiz Ahmed Fouatih",
-        role: "Backend Developer",
-        image: "./assets/hamza.png",
-        bio: "AI engineering student at the National School of Artificial Intelligence. He has powerful creativity, strong soft skills, and a solid programming background with technical hard skills.",
-        skills: ["python", "c++", "dart"],
-        profileLink: "./team/hamza.html"
+    name: "Hamza Faiz Ahmed Fouatih",
+    role: "Backend Developer",
+    image: "./assets/hamza.png",
+    bio: "AI engineering student at the National School of Artificial Intelligence. He has powerful creativity, strong soft skills, and a solid programming background with technical hard skills.",
+    skills: ["python", "c++", "dart"],
+    profileLink: "./team/hamza.html"
   },
   {
-        name: "Nour ZAMICHE",
-        image: "./assets/nour.jpg",
-        bio: "Nour Zamiche, a third-year AI student at ENSIA in Algeria, specializing in artificial intelligence and web development. Experienced in projects such as Lemma and other academic AI applications, with certifications in Python, AI Fundamentals, and Generative AI.",
-        skills: ["AI", "Databases", "APIs"],
-        profileLink: "./team/nour-zamiche.html"
-    },
-  {
-      name: "REMMACHE Hibaterrahman",
-      role: "Team Member",
-      image: "./assets/Hiba.jpg",
-      bio: "A passionate student in computer science at ENSIA, with a keen interest in design and problem-solving.",
-      skills: ["Design", "Problem-Solving", "Front-End Dev"],
-      profileLink: "./team/hiba.html"
+    name: "Nour ZAMICHE",
+    image: "./assets/nour.jpg",
+    bio: "Nour Zamiche, a third-year AI student at ENSIA in Algeria, specializing in artificial intelligence and web development. Experienced in projects such as Lemma and other academic AI applications, with certifications in Python, AI Fundamentals, and Generative AI.",
+    skills: ["AI", "Databases", "APIs"],
+    profileLink: "./team/nour-zamiche.html"
   },
   {
-     name: "Fatima Zohra Doua BOURZAK",
-        role: "Team Member",
-        image: "./assets/douaa.png",
-        bio: "A dedicated AI engineering student and full-stack developer with a passion for creativity and solving complex problems.",
-        skills: ["3D Design", "Planning", "Full-Stack Dev"],
-        profileLink: "./team/fatima-zohra-doua-bourzak.html"
+    name: "REMMACHE Hibaterrahman",
+    role: "Team Member",
+    image: "./assets/Hiba.jpg",
+    bio: "A passionate student in computer science at ENSIA, with a keen interest in design and problem-solving.",
+    skills: ["Design", "Problem-Solving", "Front-End Dev"],
+    profileLink: "./team/hiba.html"
+  },
+  {
+    name: "Fatima Zohra Doua BOURZAK",
+    role: "Team Member",
+    image: "./assets/douaa.png",
+    bio: "A dedicated AI engineering student and full-stack developer with a passion for creativity and solving complex problems.",
+    skills: ["3D Design", "Planning", "Full-Stack Dev"],
+    profileLink: "./team/fatima-zohra-doua-bourzak.html"
   },
 ];
 const container = document.getElementById("team-container");
@@ -80,14 +80,12 @@ teamMembers.forEach((member, index) => {
         <!-- Front of Card -->
         <div class="absolute inset-0 backface-hidden rounded-2xl overflow-hidden glass-card border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 glow">
             <div class="relative h-full">
-                <img src="${member.image}" alt="${
-    member.name
-  }" class="w-full h-full object-cover">
+                <img src="${member.image}" alt="${member.name
+    }" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h3 class="text-2xl font-bold text-white mb-2 font-space">${
-                  member.name
-                }</h3>
+                <h3 class="text-2xl font-bold text-white mb-2 font-space">${member.name
+    }</h3>
                 <p class="text-muted-foreground text-md mt-2">Click to learn more</p>
                 </div>
             </div>
@@ -96,27 +94,25 @@ teamMembers.forEach((member, index) => {
         <!-- Back of Card -->
         <div class="absolute inset-0 backface-hidden rounded-2xl glass-card border-2 border-accent/40 p-6 flex flex-col justify-between rotate-y-180">
         <div>
-            <h3 class="text-2xl font-bold mb-2 text-gradient font-space">${
-              member.name
-            }</h3>
+            <h3 class="text-2xl font-bold mb-2 text-gradient font-space">${member.name
+    }</h3>
             <p class="text-white/80 mb-6 leading-relaxed">${member.bio}</p>
             <div class="space-y-2">
             <p class="text-sm text-muted-foreground font-semibold">Skills & Expertise:</p>
             <div class="flex flex-wrap gap-2">
                 ${member.skills
-                  .map(
-                    (skill) => `
+      .map(
+        (skill) => `
                 <span class="px-3 py-1 bg-primary/10 border border-primary/30 rounded-full text-xs text-primary font-medium">${skill}</span>
                 `
-                  )
-                  .join("")}
+      )
+      .join("")}
             </div>
             </div>
         </div>
         <div class="flex flex-col gap-2 mt-4">
-            <a href="${
-              member.profileLink
-            }" class="w-full py-3 bg-gradient-to-r from-primary to-accent rounded-full text-white font-semibold hover:scale-105 transition-transform duration-300 neon-glow text-center">View Full Profile</a>
+            <a href="${member.profileLink
+    }" class="w-full py-3 bg-gradient-to-r from-primary to-accent rounded-full text-white font-semibold hover:scale-105 transition-transform duration-300 neon-glow text-center">View Full Profile</a>
         </div>
         </div>
 
