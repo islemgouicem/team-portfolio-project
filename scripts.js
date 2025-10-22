@@ -35,19 +35,20 @@ const teamMembers = [
     profileLink: "./team/maroua-sayah.html",
   },
   {
+        name: "Hamza Faiz Ahmed Fouatih",
+        role: "Backend Developer",
+        image: "./assets/hamza.png",
+        bio: "AI engineering student at the National School of Artificial Intelligence. He has powerful creativity, strong soft skills, and a solid programming background with technical hard skills.",
+        skills: ["python", "c++", "dart"],
+        profileLink: "./team/hamza.html"
+  },
+  {
         name: "Nour ZAMICHE",
         image: "./assets/nour.jpg",
         bio: "Nour Zamiche, a third-year AI student at ENSIA in Algeria, specializing in artificial intelligence and web development. Experienced in projects such as Lemma and other academic AI applications, with certifications in Python, AI Fundamentals, and Generative AI.",
         skills: ["AI", "Databases", "APIs"],
         profileLink: "./team/nour-zamiche.html"
     },
-  {
-      name: "Carol",
-      image: "./assets/member1.jpg",
-      bio: "Short bio about the team member goes here. Describe their experience, skills, and contribution.",
-      skills: ["Planning", "Communication", "Leadership"],
-      profileLink: "./team/firstname-lasname.html"
-  },
   {
       name: "REMMACHE Hibaterrahman",
       role: "Team Member",
